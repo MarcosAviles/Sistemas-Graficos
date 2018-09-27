@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+	<title>Práctica 3</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	<script type="text/javascript" src="./js/three.min.js"></script>
+	<script type="text/javascript" src="./js/TrackballControls.js"></script>
+	<script type="text/javascript" src="./js/stats.js"></script>
+	<script type="text/javascript" src="./js/tween.js"></script>
+	<script type="text/javascript" src="./js/physi.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="Pelota.js"></script>
+	<script type="text/javascript" src="Obstaculo.js"></script>
+	<script type="text/javascript" src="Pincho.js"></script>
+	<script type="text/javascript" src="Objetivo.js"></script>
+	<script src="./js/jquery.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+	<div id="heading">
+		<h1>Práctica 3 - Juego del laberinto</h1>
+		<h1>
+			Marcos Avilés Luque - Jonathan Martin Valera
+		</h1>
+	</div>
+	<div>
+		<div class="w3-red" id="life"><p id="vida" class="titulo2">Vida: </p>
+		<progress value="100" max="100" id="lifeCounter"></progress>
+	</div>
+	<div>
+		<p class="titulo" id="partida">¡Has Perdido!</p>
+		<button class="boton" id="Reiniciar">Reiniciar</button>
+	</div>
+	<div id="box_level">
+		<p class="titulo2" id="nivelS">Nivel:</p>
+		<p class="titulo2" id="nivel">1</p>
+	</div>
+	<div id="viewport"></div>
+
+</body>
+
+</html>
